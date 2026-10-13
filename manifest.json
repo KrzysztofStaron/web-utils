@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Web Utils",
+  "version": "1.0.0",
+  "description": "Hides the AdsKeeper teaser box on tgmanga.com.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://tgmanga.com/*",
+        "https://www.tgmanga.com/*",
+        "http://tgmanga.com/*",
+        "http://www.tgmanga.com/*"
+      ],
+      "js": ["content/tgmanga-ads.js"],
+      "css": ["content/tgmanga-ads.css"],
+      "run_at": "document_start"
+    }
+  ]
+}

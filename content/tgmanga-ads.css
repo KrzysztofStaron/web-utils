@@ -1,0 +1,5 @@
+/* The teaser id, data-i hash, and widget id change on every page view. */
+.mgbox:has(.mgline),
+.mgbox:has(a[href*="adskeeper.co.uk"]) {
+  display: none !important;
+}
